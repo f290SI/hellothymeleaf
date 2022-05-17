@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thymeleaf</title>
+</head>
+
+<body>
+    <h1>Chamada do dia 03 de maio</h1>
+    <h2>Alunos presentes</h2>
+    <ul>
+       <li th:each="aluno : ${alunos}">
+           <span th:text="${aluno.nome}"></span>
+        </li> 
+    </ul>
+</body>
+
+</html>
